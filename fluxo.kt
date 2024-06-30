@@ -1,48 +1,91 @@
+fun quadrado() {
+    print("valor1: ")
+    val lado1 = readLine()
 
-fun bonus(cargo: String): Float{
+    print("valor2: ")
+    val lado2 = readLine()
 
-    var bonus = 0f
+    if (lado1 != null && lado1 != "" && lado2 != null && lado2 != "") {
+        val x = lado1.toInt()
+        val y = lado2.toInt()
 
-    if (cargo == "gerente") {
-        bonus = 2000f
-    }
-    else if (cargo == "coordenador") {
-        bonus = 1500f
-    }
-    else if (cargo == "engenheiro de software") {
-        bonus = 1000f
-    }
-    else if (cargo == "estagiario") {
-        bonus = 500f
-    }
-    return bonus
-}
-fun bonus(cargo: String, experiencia: Int): Float{
-
-    var bonus = 0f
-
-    if (cargo == "gerente") {
-        if (experiencia < 2) {
-            bonus = 2000f
+        if (x == y) {
+            println("quadradao")
         } else {
-            bonus = 3000f
+            println("ota coisa")
         }
     }
-    else if (cargo == "coordenador") {
-        if (experiencia < 1) {
-            bonus = 1500f
+
+}
+
+fun triangulo() {
+    print("valor1: ")
+    val lado1 = readLine()
+
+    print("valor2: ")
+    val lado2 = readLine()
+
+    print("valor3: ")
+    val lado3 = readLine()
+
+    if (lado1 != null && lado1 != "" && lado2 != null && lado2 != ""
+        && lado3 != null && lado3 != ""
+    ) {
+        val x = lado1.toInt()
+        val y = lado2.toInt()
+        val z = lado3.toInt()
+
+        if (x == y && y == z) {
+            println("triangulo")
         } else {
-            bonus = 1800f
+            println(" nada de triangulo equilatero")
         }
     }
-    else if (cargo == "engenheiro de software") {
-        bonus = 1000f
-    }
-    else if (cargo == "estagiario") {
-        bonus = 500f
-    }
-    return bonus
 }
-fun main(){
-    val bonus = bonus("gerente", experiencia = 20)
-    println(bonus)}
+
+fun portaria() {
+    print("Qual sua idade? ")
+    val idade = readLine()
+
+    if (idade != null && idade != "") {
+        if (idade.toInt() < 18) {
+            println("Negado. Menores de idade não são permitidos.")
+            return
+        }
+    }
+
+    print("Qual é o tipo de convite? ")
+    var tipoConvite = readLine()
+
+    if (tipoConvite != null && tipoConvite != "") {
+        tipoConvite = tipoConvite.lowercase()
+
+        // Validação do tipo de convite
+        if (tipoConvite != "comum" && tipoConvite != "premium" && tipoConvite != "luxo") {
+            println("Negado. Convite inválido.")
+            return
+        }
+
+        print("Qual o código do convite? ")
+        var codigo = readLine()
+
+        if (codigo != null && codigo != "") {
+            codigo = codigo.lowercase()
+
+            if (tipoConvite == "comum" && codigo.startsWith("xt")) {
+                println("Welcome :)")
+            } else if ((tipoConvite == "premium" || tipoConvite == "luxo") && codigo.startsWith("xl")
+            ) {
+                println("Welcome :)")
+            } else {
+                println("Negado. Convite inválido")
+            }
+        }
+    }
+}
+
+fun main() {
+    // quadrado()
+    //triangulo()
+    portaria()
+}
