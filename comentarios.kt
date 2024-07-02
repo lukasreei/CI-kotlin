@@ -114,3 +114,147 @@ import kotlin.math.*
 //  println(E)
 // println(round(x = 3142342.2524))
 //}
+import kotlin.math.*
+
+//atividade 1
+//fun converte(anos: Int){
+   // println("$anos anos equivalem a: ")
+ //   println("${anos * 12} meses")
+  //  println("${anos * 365} dias")
+  //  println("${anos * 365 * 24} horas")
+   // println("${anos * 365 * 24 * 60} minutos")
+  //  println("${anos * 365 * 24 * 60 * 60} segundos")
+// }
+//
+//fun milhaskm(milhas: Float): Float = milhas * 1.6f
+//
+//fun caracteres(str: String) = str.length
+
+//fun cubo(n: Int) = n * n * n
+
+//fun main(){
+  //  converte(2)
+ //   println(caracteres("cubo"))
+    //cubo(3)
+  //  println(cubo(3))
+//
+ //
+//}
+
+
+//fluxo
+
+//fun maiorDeIdade(idade: Int){
+//    if (idade > 18) {
+//        println("maior de idade")
+//        if (idade > 60) {
+//            println("terceira idade")
+//        }
+//    } else if (idade < 10) {
+//        println("criança")
+//    }
+//    else{
+//        println("menor de idade")
+//    }
+//}
+//fun main() {
+//    maiorDeIdade(19)
+//    maiorDeIdade(15)
+//}
+
+
+
+//fun main(){
+//
+//    val a = false
+//    val b = false
+//    val c = true
+//    val d = true
+//
+//    println(a && b && c && d)
+//
+//}
+
+
+//fun bonus(cargo: String): Float{
+//
+//    var bonus = 0f
+//
+//    if (cargo == "gerente") {
+//        bonus = 2000f
+//    }
+//    else if (cargo == "coordenador") {
+//            bonus = 1500f
+//    }
+//    else if (cargo == "engenheiro de software") {
+//        bonus = 1000f
+//    }
+//    else if (cargo == "estagiario") {
+//        bonus = 500f
+//    }
+//    return bonus
+//}
+//
+//fun bonusWhen(cargo: String): Float{
+//     return when (cargo){
+//        "gerente" -> 2000f
+//        "coordenador" -> 1500f
+//        "engenheiro de software" -> 1000f
+//        "estagiario" -> 500f
+//        else -> 0f
+//    }
+//}
+//fun main(){
+//    bonusWhen("gerente")
+//    val n = false
+//    when (n) {
+//        true -> println("1..10")
+//        false -> println("2..3")
+//    }    }
+
+
+//A estrutura de múltipla seleção when é utilizada para comparar um valor com conjunto de opções. Dessa forma, cada opção é verificada sequencialmente e uma vez que haja uma correspondência um valor pode ser retornado ou um comando executado.
+//
+//Essa estrutura é muito utilizada quando uma variável pode assumir um dentre alguns valores conhecidos.  por exemplo, estado pode ter os valores ativo ou inativo e qual mensagem será exibida para o usuário depende disso.
+//
+//val estado = "ativo"
+//
+//when(estado) {
+//    "ativo" -> print("Clique para desativar")
+//    "inativo" -> print("Clique para ativar")
+//}
+//
+//Opcionalmente podemos adicionar um bloco else às ramificações de when. Dessa forma, quando o valor informado não corresponder a nenhuma das opções esse bloco será executado
+//val estado = "ativo"
+//
+//when(estado) {
+//    "ativo" -> print("Clique para desativar")
+//    "inativo" -> print("Clique para ativar")
+//    else -> {
+//        print("valor de estado é desconhecido")
+//    }
+//}
+//
+//Assim como o bloco else acima, qualquer ramificação dentro de when pode ser um bloco de código delimitado por chaves { }, ou um único comando ou expressão e nesse caso as chaves são opcionais.
+//
+//É possível ainda agrupar diferentes valores dentro de uma única ramificação em when. Com isso o bloco de código pertencente a ela será executado caso haja uma correspondência por qualquer um dos seus valores
+//
+//val estado = ""
+//
+//when(estado) {
+//    "ativo", "inativo" -> print("estado conhecido)
+//    else -> {
+//        print("estado desconhecido")
+//    }
+//}
+//
+
+
+//força a pessoa a digite seu nome
+/** fun main(){
+    do {
+        print("qual seu nome: ")
+        val value = readLine()
+    } while (value == "")
+}
+        */
