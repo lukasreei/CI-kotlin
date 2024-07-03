@@ -1,4 +1,4 @@
-fun main() {
+fun atvd1() {
     print("digite seu nome: ")
     var convidado = readLine()
 
@@ -19,4 +19,20 @@ fun main() {
     }else if(local == "front"){
         print("a esquerda")
     }else(print("a direita"))
+}
+
+fun atvd2(){
+    print("vamos tirar a sua media ")
+    print("digite sua primeira nota: ")
+    var nota1 = readLine()!!.toInt()
+    print("digite sua segunda nota: ")
+    var nota2 = readLine()!!.toInt()
+    print("digite sua terceira nota: ")
+    var nota3 = readLine()!!.toInt()
+    var media = (nota1 + nota2 + nota3) / 3f
+
+    println("media: $media")
+}
+fun main(){
+    atvd2()
 }
